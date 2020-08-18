@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>바닐라 JS로 크롬 앱 만들기</title>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="clock js-clock">
+		<div class="clock-title js-title">
+			<span class="hour"></span><span class="dot">:</span><span class="minutes"></span><span class="seconds"></span>
+		</div>
+		<div class="date-title js-date-title">
+			<span class="year"></span><span class="bul">년</span>
+			<span class="month"></span><span class="bul">월</span>
+			<span class="day"></span><span class="bul">일</span>
+			<span class="day-of-weeks"></span>
+		</div>
+	</div>
+	
+	<div class="contents-wrap">
+		<form class="form form-name js-form">
+			<input type="text" placeholder="What is your name?">
+		</form>
+
+		<div class="greetings js-greetings"></div>
+
+		<form class="form js-todo-form">
+			<input type="text" placeholder="Write a to do">
+		</form>
+		<ul class="todo-list js-todo-list">
+			<!-- <li id="1">
+				<span>할일</span>
+				<button>x</button>
+			</li> -->
+		</ul>
+	</div>
+
+	<script src="./js/clock.js"></script>
+	<script src="./js/greeting.js"></script>
+	<script src="./js/todo.js"></script>
+	<script src="./js/background.js"></script>
+</body>
+</html>
