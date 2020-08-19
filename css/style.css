@@ -9,6 +9,7 @@ body, h1, ul, input {
 }
 
 body {
+	background-color: #000;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 50%;
@@ -23,6 +24,7 @@ body {
 	text-align: center;
 	/* transform: translate(-50%,-50%); */
 	/* transform: translateY(-50%); */
+	animation: fadeIn .8s ease;
 }
 
 .clock-title {
@@ -45,7 +47,7 @@ body {
 
 .clock-title .seconds { 
 	margin-left: 12px;
-	color: rgba(208, 208, 208, 0.8);
+	color: rgba(226, 226, 226, 0.8);
 	font-size: 40px;
 	line-height: 1.25;
 	vertical-align: bottom;
@@ -78,6 +80,7 @@ body {
 	padding: 4em 6em;
 	border-radius: 20px;*/
 	text-align: center; 
+	animation: fadeDown .6s ease;
 }
 
 /* form */
@@ -97,7 +100,7 @@ body {
 	border: 0;
 	color: #fff;
 	outline: none;
-	border-bottom: 4px solid rgba(255,255,255,.6);
+	border-bottom: 4px solid rgba(255,255,255,.7);
 	text-align: center;
 }
 .form input:focus {
@@ -111,19 +114,19 @@ body {
 }
 
 .form input::-webkit-input-placeholder {
-	color: rgba(255, 255, 255, .6);
+	color: rgba(255, 255, 255, .7);
 	text-align: center;
 }
 .form input:-moz-placeholder {
-	color: rgba(255, 255, 255, .6);
+	color: rgba(255, 255, 255, .7);
 	text-align: center;
 }
 .form input::-moz-placeholder {
-	color: rgba(255, 255, 255, .6);
+	color: rgba(255, 255, 255, .7);
 	text-align: center;
 }
 .form input:-ms-input-placeholder {
-	color: rgba(255, 255, 255, .6);
+	color: rgba(255, 255, 255, .7);
 	text-align: center;
 }
 
@@ -164,4 +167,37 @@ body {
 }
 .todo-list.showing {
 	display: inline-block;
+}
+
+/* weather */
+.weather-wrap {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	color: #fff;
+	font-size: 15px;
+	line-height: 1;
+}
+
+/* animation */
+@keyframes fadeDown {
+	0% {
+		opacity: 0;
+		margin-top: -15px;
+	}
+
+	100% {
+		opacity: 1;
+		margin-top: 0;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
